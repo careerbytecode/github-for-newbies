@@ -1,4 +1,7 @@
 # GitHub-for-newbies
+
+<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/42ac0d96-63f5-4474-9a61-c36e38d5c006" />
+
 Hands-on exercises and notes for beginners to learn GitHub.
  
 This repository contains materials, exercises, and guides for learning Git and GitHub from scratch.  
@@ -8,24 +11,91 @@ This repository contains materials, exercises, and guides for learning Git and G
 
 ---
 
-**0–5 min – Introduction**
-- Why version control matters: teamwork, history, rollback
-- Difference between Git (local) and GitHub (remote / collaboration)
-- Overview of session topics
 
-**5–15 min – Getting Started with Git**
-- Installing Git & configuring user details
-- Initializing a repository: `git init`
-- Basic workflow: `git add`, `git status`, `git commit`
-- Viewing history: `git log`, `git diff`
+# Version Control with Git & GitHub
 
-**15–25 min – Remote Repositories & GitHub Basics**
-- Creating a repository on GitHub
-- Cloning a repo: `git clone`
-- Linking local to remote: `git remote add origin <URL>`
-- Pushing & pulling changes: `git push`, `git pull`
-- Simple collaboration workflow: local → commit → push → remote
+## What is Version Control?
 
+Version control is a system that helps you:
+- Track changes in your code.
+- Revert to previous versions if something breaks.
+- Collaborate easily with others on the same project.
+
+Think of it like a **time machine for your code** 
+
+---
+
+## Git vs GitHub
+
+| Feature | Git | GitHub |
+|----------|-----|---------|
+| Type | Tool (installed locally) | Cloud platform (web-based) |
+| Purpose | Track and manage code versions on your computer | Host and share Git repositories online |
+| Access | Command-line | Website / Web App |
+| Internet Required | No (works offline) | Yes |
+| Example | `git commit`, `git log`, `git checkout` | Create repo, fork, pull request, add collaborators |
+| Analogy | Saving files in folders locally | Uploading files to Google Drive to share |
+
+**In short:**  
+> Git = *Version control tool*  
+> GitHub = *Collaboration and hosting platform for Git repositories*
+
+---
+
+## Git Workflow
+
+The Git workflow follows a simple process that helps developers manage versions efficiently.  
+Each step represents a stage in your project’s life cycle, from local changes to sharing online.
+
+---
+
+### 1. Working Directory
+Where you edit your files (create, modify, delete code).
+
+### 2. Staging Area
+Temporary area where you mark files that you want to commit.
+
+### 3. Local Repository
+Where committed changes are permanently saved on your system.
+
+### 4. Remote Repository (GitHub)
+Online version of your repository to collaborate and share with others.
+
+---
+
+
+## Common Git Commands
+
+### Setup
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+git init ##Initialize Repository
+git add filename.py  ##Track Files
+git add .
+git commit -m "Your message"   ## Commit Changes 
+git status ##Check Status
+git log ##View History
+git diff ##See Differences
+
+##Restore / Rollback
+git diff --staged
+git restore filename.py
+git checkout <commitID> -- filename.py
+```
+---
+## Common Github Commands
+### Connect Local Repo to GitHub
+```bash
+git remote add origin https://github.com/username/repo.git
+git push -u origin main
+```
+
+### Clone a Repository
+```bash
+git clone https://github.com/username/repo.git
+git pull origin main
+```
 ---
 
 ## Branching and Merging 
