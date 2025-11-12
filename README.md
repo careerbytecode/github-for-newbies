@@ -260,3 +260,5 @@ Create a repo
    - Provide Cheat-Sheet
 ---
 Follow [Jenefer Rexee on LinkedIn](https://www.linkedin.com/in/jenwithai/)  
+Follow [Kiruthiga Ravi on LinekedIn](https://www.linkedin.com/in/aiwithkiruthiga)
+
